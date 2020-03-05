@@ -2,6 +2,10 @@
   "name": "reece-test-server",
   "version": "1.0.0",
   "description": "A Node.js server for Reece code challenge",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuchenQ/reece-test-server.git"
+  },
   "main": "src/index.js",
   "scripts": {
     "start:dev": "nodemon --exec babel-node src/index.js",

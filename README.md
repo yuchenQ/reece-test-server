@@ -36,13 +36,11 @@ SERVER_PORT=8000 // customize listening port, default is 8000
 
 ### 3. Running development version
 
-1. `npm run start:dev` to start the development version of server.
-2. open http://localhost:8000 to open the site in your favorite browser.
+`npm run start:dev` to start the development version of server.
 
 ### 4. Running production version
 
-1. `npm run start:prod` to start the production version of server.
-2. open https://localhost:8000 to open the storybook in your favorite browser.
+`npm run start:prod` to start the production version of server.
 
 ## Running tests
 
