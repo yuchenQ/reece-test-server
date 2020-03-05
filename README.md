@@ -12,7 +12,7 @@ Or run ```git clone https://github.com/yuchenQ/reece-test-client.git <target_fol
 
 ## Overview
 
-Koa 2, Mongoose, MongoDB Atlas(remote database), winston, Babel, Ramda, Eslint, Prettier.
+Koa 2, Mongoose, MongoDB Atlas(remote database), Winston, Babel, Ramda, Eslint, Prettier.
 
 ## Issues
 
@@ -49,7 +49,7 @@ See an example in `./.env.example`
 
 ### Linting
 
-ESLint &n StyleLint, check syntax, find problems, and enforce code style.
+ESLint, check syntax, find problems, and enforce code style.
 `npm run lint` to run linting for codebase.
 
 ## Deployment
@@ -58,5 +58,5 @@ ESLint &n StyleLint, check syntax, find problems, and enforce code style.
 
 `npm run build` to build website artifacts
 
-- Tool: Webpack, Babel
+- Tool: Babel
 - Artifacts: `./build`
