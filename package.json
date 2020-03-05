@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "reece-test-server",
   "version": "1.0.0",
   "description": "A Node.js server for Reece code challenge",
   "main": "src/index.js",
