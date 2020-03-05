@@ -10,9 +10,9 @@ connection.once('open', () => {
   console.log('Info from <db>: MongoDB Atlas connected successfully');
 });
 
-const PORT = process.env.PORT || 8000;
+const port = process.env.SERVER_PORT || 8000;
 const app = createServer();
 
-app.listen(PORT, () => {
-  console.log(`Info from <server>: Starting server on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Info from <server>: Starting server on port ${port}`);
 });
