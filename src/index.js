@@ -1,18 +1,14 @@
-import { connect, connection } from 'mongoose';
-import dotenv from 'dotenv';
 import createServer from './createServer';
+import connectDB from './config/database';
+import environment from './config/environment';
+import logger from './config/logger';
 
-dotenv.config();
+(async () => {
+  await connectDB();
 
-connect(process.env.ATLAS_URI, { useUnifiedTopology: true, useNewUrlParser: true });
+  const app = createServer();
 
-connection.once('open', () => {
-  console.log('Info from <db>: MongoDB Atlas connected successfully');
-});
-
-const port = process.env.SERVER_PORT || 8000;
-const app = createServer();
-
-app.listen(port, () => {
-  console.log(`Info from <server>: Starting server on port ${port}`);
-});
+  app.listen(environment.PORT, () => {
+    logger.info(`Info from <server>: Starting server on port ${environment.PORT}`);
+  });
+})();

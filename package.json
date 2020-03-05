@@ -25,7 +25,8 @@
     "koa-bodyparser": "^4.2.1",
     "koa-qs": "^2.0.0",
     "mongoose": "^5.9.3",
-    "ramda": "^0.27.0"
+    "ramda": "^0.27.0",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
