@@ -2,7 +2,8 @@
 
 ## Important
 
-This is only the server of the whole application, if you want to experience/ check the whole functionalities of it, please pull the
+- This is only the server of the whole application.
+- If you want to experience/ check the whole functionalities of it, please pull the
 [client](https://github.com/yuchenQ/reece-test-client).
 
 Or run ```git clone https://github.com/yuchenQ/reece-test-client.git <target_folder>``` to make a quick pull.
@@ -11,17 +12,19 @@ Or run ```git clone https://github.com/yuchenQ/reece-test-client.git <target_fol
 
 ## Overview
 
-Koa 2, Mongoose, MongoDB Atlas(remote database), Babel, Ramda, Eslint, Prettier.
+Koa 2, Mongoose, MongoDB Atlas(remote database), winston, Babel, Ramda, Eslint, Prettier.
 
 ## Issues
 
-Need token to access to MongoDB Atlas, while not included in the repo, use your MongoDB Atlas token to initiate the db.
+- Need token to access to MongoDB Atlas, set `.env` before running.
+- Make sure you whitelisted your current IP in MongoDB Atlas network access.
 
 ```sh
-// .env
-ATLAS_URI=<your mongodb atlas token>
-SERVER_PORT=8000 // customize listening port, default is 8000
+DATABASE=<your mongodb atlas token>
+PORT=<server will listen> // default is 8000
 ```
+
+See an example in `./.env.example`
 
 ## Getting Started
 
